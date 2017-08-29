@@ -80,7 +80,7 @@ class Flashcards {
   initializeAudio() {
     // when we are done, we'll move these sounds to the project folder
     this.sounds = {}
-    let soundsDir = '../node_modules/ion-sound/sounds/'
+    let soundsDir = '../assets'
     this.sounds.snap = new Howl({ src: [`${soundsDir}snap.mp3`], preload: true, volume: .15 })
     this.sounds.tap = new Howl({ src: [`${soundsDir}tap.mp3`], preload: true, volume: .15  })
     this.sounds.broken = new Howl({ src: [`${soundsDir}light_bulb_breaking.mp3`], preload: true, volume: .05  })   
