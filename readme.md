@@ -18,20 +18,20 @@ During a session, cards "due" are loaded into a "hand" with max 6 cards at a tim
 
 * card: data object containing everything necessary for a learning experience, includes "due" schedule
 * session: a set of time spent on cards currently due
-  *     session.hand
-  *      session.additional
-  *     session.all
-*   cardsDue: all cards with a scheduled date of today or earlier
-*   hand: a small group (5-10) of the cardsDue which are rotated at a time for practice
-*   store: object for managing storage of user cards and provision for importing new cards
+  * session.hand
+  * session.additional
+  * session.all
+* cardsDue: all cards with a scheduled date of today or earlier
+* hand: a small group (5-10) of the cardsDue which are rotated at a time for practice
+* store: object for managing storage of user cards and provision for importing new cards
 
 
 ### Concepts Planned
 
-*  decks: available new cards in sets, with a group description
-*  queue: sets of cards queued up for assignment at defined rate
-  *    queue.trickle: rate new cards from queue are assigned
-  *    queue.trickle.autofeed: option to automatically feed session when hand gets low
+* decks: available new cards in sets, with a group description
+* queue: sets of cards queued up for assignment at defined rate
+  * queue.trickle: rate new cards from queue are assigned
+  * queue.trickle.autofeed: option to automatically feed session when hand gets low
   
   
 ### Additional Screens Planned
