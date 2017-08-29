@@ -84,20 +84,17 @@ class Flashcards {
     this.sounds.snap = new Howl({ src: [`${soundsDir}snap.mp3`], preload: true, volume: .15 })
     this.sounds.tap = new Howl({ src: [`${soundsDir}tap.mp3`], preload: true, volume: .15  })
     this.sounds.broken = new Howl({ src: [`${soundsDir}light_bulb_breaking.mp3`], preload: true, volume: .05  })   
-    //let SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    //this.session.listen = new webkitSpeechRecognition(); 
-
-          // set up voice commands 
-          annyang.start()
-          annyang.debug()
-          let commands = {
-            "one":  function() {console.log('one')},
-            "two":   () => console.log('two'),
-            "three": () => console.log('three'),
-            "four":  () => console.log('four')
-          }   
-          annyang.addCommands(commands)
-
+    // set up voice commands 
+    annyang.start()
+    annyang.removeCommands()
+    annyang.debug()
+    let commands = {
+      "one":    ()=>this.pressKey('1') ,
+      "two":    ()=>this.pressKey('2') ,
+      "three":  ()=>this.pressKey('3') ,
+      "four":   ()=>this.pressKey('4') 
+    }   
+    annyang.addCommands(commands)
   }
 
   playPreloadedSound(sound, pauseBefore=0, pauseAfter=0) { 
@@ -108,6 +105,10 @@ class Flashcards {
         sound.play() 
       }, pauseBefore)
     })
+  }
+
+  presskey(character) {
+    jQuery.event.trigger({ type : 'keypress', which : character.charCodeAt(0) });
   }
 
   // start a practice session either with a set of cards or with the cards currently due
