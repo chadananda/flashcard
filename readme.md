@@ -1,4 +1,4 @@
-# Flashcard Proto
+# Flashcard Prototype
 
 Quick flashcard prototype to experiment with getting the flow right
 
