@@ -1,0 +1,190 @@
+{
+  "cards": [
+    {"id":"vocab-a84kd9ckdi", "type":"vocab",
+      "content": {
+         "question": "demure", "answer": "quiet, modest, reserved", 
+         "description": "define the word",
+         "incorrect": ["full of high-spirited delight","to steal money by falsifying records","clear and sharp in analysis or expression","not suitable or capable, unqualified","restrain; prohibit; retard or prevent","shocking; sensational"] 
+      },
+      "files": {
+        "aud": ["cards-audio/demure.mp3"],
+        "img": []
+      }
+    },
+
+    {"id":"vocab-b84kd9ckdi", "type":"vocab",
+      "content": {
+         "question": "accordance", "answer": "agreement", 
+         "description": "define the word",
+         "incorrect": ["full of high-spirited delight","to steal money by falsifying records","clear and sharp in analysis or expression","not suitable or capable, unqualified","restrain; prohibit; retard or prevent","shocking; sensational"] 
+      },
+      "files": {
+        "aud": ["cards-audio/accordance.mp3"],
+        "img": []
+      }
+    },
+
+    {"id":"vocab-c84kd9ckdi", "type":"vocab",
+      "content": {
+         "question": "accused", "answer": "defendant", 
+         "description": "define the word",
+         "incorrect": ["full of high-spirited delight","to steal money by falsifying records","clear and sharp in analysis or expression","not suitable or capable, unqualified","restrain; prohibit; retard or prevent","shocking; sensational"] 
+      },
+      "files": {
+        "aud": ["cards-audio/accused.mp3"],
+        "img": []
+      }
+    },
+
+    {"id":"vocab-d84kd9ckdi", "type":"vocab",
+      "content": {
+         "question": "affinities", "answer": "Natural liking or sympathy for someone or something", 
+         "description": "define the word",
+         "incorrect": ["full of high-spirited delight","to steal money by falsifying records","clear and sharp in analysis or expression","not suitable or capable, unqualified","restrain; prohibit; retard or prevent","shocking; sensational"] 
+      },
+      "files": {
+        "aud": ["cards-audio/affinities.mp3"],
+        "img": []
+      }
+    },
+
+    {"id":"vocab-e84kd9ckdi", "type":"vocab",
+      "content": {
+         "question": "amputation", "answer": "partial or complete removal of a limb", 
+         "description": "define the word",
+         "incorrect": ["full of high-spirited delight","to steal money by falsifying records","clear and sharp in analysis or expression","not suitable or capable, unqualified","restrain; prohibit; retard or prevent","shocking; sensational"] 
+      },
+      "files": {
+        "aud": ["cards-audio/amputation.mp3"],
+        "img": []
+      }
+    },
+
+    {"id":"vocab-f84kd9ckdi", "type":"vocab",
+      "content": {
+         "question": "alleged", "answer": "reported, supposed", 
+         "description": "define the word",
+         "incorrect": ["full of high-spirited delight","to steal money by falsifying records","clear and sharp in analysis or expression","not suitable or capable, unqualified","restrain; prohibit; retard or prevent","shocking; sensational"] 
+      },
+      "files": {
+        "aud": ["cards-audio/alleged.mp3"],
+        "img": []
+      }
+    },
+
+    {"id":"vocab-g84kd9ckdi", "type":"vocab",
+      "content": {
+         "question": "ambiguity", "answer": "An event or situation that may be interpreted in more than one way", 
+         "description": "define the word",
+         "incorrect": ["full of high-spirited delight","to steal money by falsifying records","clear and sharp in analysis or expression","not suitable or capable, unqualified","restrain; prohibit; retard or prevent","shocking; sensational"] 
+      },
+      "files": {
+        "aud": ["cards-audio/ambiguity.mp3"],
+        "img": []
+      }
+    },
+
+   {"id":"lang_vocab-d84kd9ckdi", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en","ar"],
+         "words": ["dog", "كلب"],
+         "description": "translate the word",
+         "incorrect": [
+           ["pig", "cat", "horse",  "monkey", "sheep", "lizard", "bird", "mosquitoe"],
+           ["خنزير", "قط", "حصان",   "قرد",   "خروف",  "سحلية",  "طائر", "بعوض"]
+         ] 
+      },
+      "files": {
+        "aud": ["cards-audio/dog-en.mp3", "cards-audio/dog-ar.mp3"],
+        "img": []
+      }
+    },
+
+   {"id":"lang_vocab-d84kd9ckdj", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["pig",  "خنزير"],
+         "description": "translate the word",
+         "incorrect": [
+           ["dog", "cat", "horse",  "monkey", "sheep", "lizard", "bird", "mosquitoe"],
+           [ "كلب", "قط", "حصان",   "قرد",   "خروف",  "سحلية",  "طائر", "بعوض"]
+         ],
+         "audio": ["cards-audio/pig-en.mp3", "cards-audio/pig-ar.mp3"]
+      },
+      "files": {
+        "aud": ["cards-audio/pig-en.mp3", "cards-audio/pig-ar.mp3"],
+        "img": []
+      }
+    },
+
+   {"id":"lang_vocab-d84kd9ckdk", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["cat", "قط"],
+         "description": "translate the word",
+         "incorrect": [
+           ["dog",  "horse",  "monkey", "sheep", "lizard", "bird", "mosquitoe"],
+           [ "كلب", "حصان",   "قرد",   "خروف",  "سحلية",  "طائر", "بعوض"]
+         ]
+      },
+      "files": {
+        "aud": ["cards-audio/cat-en.mp3", "cards-audio/cat-ar.mp3"],
+        "img": []
+      }
+    },
+
+   {"id":"lang_vocab-d84kd9ckdl", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["horse", "حصان"],
+         "description": "translate the word",
+         "incorrect": [
+           ["dog", "cat",   "monkey", "sheep", "lizard", "bird", "mosquitoe"],
+           [ "كلب", "قط",  "قرد",   "خروف",  "سحلية",  "طائر", "بعوض"]
+         ]
+      },
+      "files": {
+        "aud": ["cards-audio/horse-en.mp3", "cards-audio/horse-ar.mp3"],
+        "img": []
+      }
+    },
+
+   {"id":"lang_vocab-d84kd9ckdm", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en","ar"],
+         "words": [ "monkey",  "قرد"],
+         "description": "translate the word",
+         "incorrect": [
+           ["pig", "cat", "horse",  "sheep", "lizard", "bird", "mosquitoe"],
+           ["خنزير", "قط", "حصان",  "خروف",  "سحلية",  "طائر", "بعوض"]
+         ] 
+      },
+      "files": {
+        "aud": ["cards-audio/monkey-en.mp3", "cards-audio/monkey-ar.mp3"],
+        "img": []
+      }
+
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdn", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en","ar"],
+         "words": ["sheep",  "خروف"],
+         "description": "translate the word",
+         "incorrect": [
+           ["pig", "cat", "horse",  "lizard", "bird", "mosquitoe"],
+           ["خنزير", "قط", "حصان",  "سحلية",  "طائر", "بعوض"]
+         ] 
+      },
+      "files": {
+        "aud": ["cards-audio/sheep-en.mp3", "cards-audio/sheep-ar.mp3"],
+        "img": []
+      }
+    }
+
+
+
+
+  ]
+}
