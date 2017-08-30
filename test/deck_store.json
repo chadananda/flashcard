@@ -88,7 +88,7 @@
       "content": {
          "lang":  ["en","ar"],
          "words": ["dog", "كلب"],
-         "description": "translate the word",
+         "description": "translate to or from Arabic",
          "incorrect": [
            ["pig", "cat", "horse",  "monkey", "sheep", "lizard", "bird", "mosquitoe"],
            ["خنزير", "قط", "حصان",   "قرد",   "خروف",  "سحلية",  "طائر", "بعوض"]
@@ -104,7 +104,7 @@
       "content": {
          "lang":  ["en", "ar"],
          "words": ["pig",  "خنزير"],
-         "description": "translate the word",
+         "description": "translate to or from Arabic",
          "incorrect": [
            ["dog", "cat", "horse",  "monkey", "sheep", "lizard", "bird", "mosquitoe"],
            [ "كلب", "قط", "حصان",   "قرد",   "خروف",  "سحلية",  "طائر", "بعوض"]
@@ -121,7 +121,7 @@
       "content": {
          "lang":  ["en", "ar"],
          "words": ["cat", "قط"],
-         "description": "translate the word",
+         "description": "translate to or from Arabic",
          "incorrect": [
            ["dog",  "horse",  "monkey", "sheep", "lizard", "bird", "mosquitoe"],
            [ "كلب", "حصان",   "قرد",   "خروف",  "سحلية",  "طائر", "بعوض"]
@@ -137,7 +137,7 @@
       "content": {
          "lang":  ["en", "ar"],
          "words": ["horse", "حصان"],
-         "description": "translate the word",
+         "description": "translate to or from Arabic",
          "incorrect": [
            ["dog", "cat",   "monkey", "sheep", "lizard", "bird", "mosquitoe"],
            [ "كلب", "قط",  "قرد",   "خروف",  "سحلية",  "طائر", "بعوض"]
@@ -153,7 +153,7 @@
       "content": {
          "lang":  ["en","ar"],
          "words": [ "monkey",  "قرد"],
-         "description": "translate the word",
+         "description": "translate to or from Arabic",
          "incorrect": [
            ["pig", "cat", "horse",  "sheep", "lizard", "bird", "mosquitoe"],
            ["خنزير", "قط", "حصان",  "خروف",  "سحلية",  "طائر", "بعوض"]
@@ -171,7 +171,7 @@
       "content": {
          "lang":  ["en","ar"],
          "words": ["sheep",  "خروف"],
-         "description": "translate the word",
+         "description": "translate to or from Arabic",
          "incorrect": [
            ["pig", "cat", "horse",  "lizard", "bird", "mosquitoe"],
            ["خنزير", "قط", "حصان",  "سحلية",  "طائر", "بعوض"]

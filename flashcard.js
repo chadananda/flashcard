@@ -62,9 +62,11 @@ class Flashcards {
 
   constructor(cardStore, displayElementID = 'flashcard_container') { 
     let today = this._today() 
+    let importTypes = ['lang_vocab'] //['lang_vocab', 'vocab']
+
     this.cards = {}
     cardStore.cards.forEach(card=> {
-      if (['lang_vocab', 'vocab'].indexOf(card.type)>=0) { 
+      if (importTypes.indexOf(card.type)>=0) { 
         if (!card.schedule) card.schedule = today
         if (!card.level) card.level = 0 
         this.cards[card.id] = card  
@@ -80,21 +82,19 @@ class Flashcards {
   initializeAudio() {
     // when we are done, we'll move these sounds to the project folder
     this.sounds = {}
-    let soundsDir = '../assets'
+    let soundsDir = '../assets/'
     this.sounds.snap = new Howl({ src: [`${soundsDir}snap.mp3`], preload: true, volume: .15 })
     this.sounds.tap = new Howl({ src: [`${soundsDir}tap.mp3`], preload: true, volume: .15  })
     this.sounds.broken = new Howl({ src: [`${soundsDir}light_bulb_breaking.mp3`], preload: true, volume: .05  })   
     // set up voice commands 
-    annyang.start()
-    annyang.removeCommands()
-    annyang.debug()
-    let commands = {
-      "one":    ()=>this.pressKey('1') ,
-      "two":    ()=>this.pressKey('2') ,
-      "three":  ()=>this.pressKey('3') ,
-      "four":   ()=>this.pressKey('4') 
-    }   
-    annyang.addCommands(commands)
+    // annyang.start() 
+    // annyang.addCommands({
+    //   "1":    () => $('.answer.a1').trigger({type:'click'}),
+    //   "2":    () => $('.answer.a2').trigger({type:'click'}),
+    //   "3":  () => $('.answer.a3').trigger({type:'click'}),
+    //   "4":   () => $('.answer.a4').trigger({type:'click'})
+    // })
+    //annyang.debug() 
   }
 
   playPreloadedSound(sound, pauseBefore=0, pauseAfter=0) { 
@@ -105,10 +105,6 @@ class Flashcards {
         sound.play() 
       }, pauseBefore)
     })
-  }
-
-  presskey(character) {
-    jQuery.event.trigger({ type : 'keypress', which : character.charCodeAt(0) });
   }
 
   // start a practice session either with a set of cards or with the cards currently due
@@ -213,7 +209,7 @@ class Flashcards {
         revealCardAnswers(answer, isCorrect) 
         // play appropriate sound then display next card after suitable delay
         if (isCorrect) { 
-          that.sounds.snap.play(); 
+          that.sounds.snap.play() 
           setTimeout(()=> resolve_card(status), 400) 
         } else {
           that.sounds.broken.play() 
@@ -227,7 +223,7 @@ class Flashcards {
         let playcount = 0
         let sound = that.session.status[card.id].audioPreload[0] 
         let correctCardClicked = false
-        $('.answer.correct').click(() => { sound.stop(); correctCardClicked=true; resolve(status) })
+        $('.answer.correct').click(() => { sound.stop(); correctCardClicked=true; resolve_card(status) })
         function repeatSound() { 
           if (!correctCardClicked && that.session && playcount++ < MAX_REPLAY) that.playPreloadedSound(sound, 0, 2000).then(()=> repeatSound() ) 
         }  
@@ -312,17 +308,7 @@ class Flashcards {
               if (!that.session.current_card_done) that.playPreloadedSound(sound) 
             })
             $(".audio, .question").addClass('clickable').click(() => that.playPreloadedSound(sound))
-          }
-
-          // set up voice commands 
-          annyang.debug()
-          let commands = {
-            "one":  function() {console.log('one')},
-            "two":   () => console.log('two'),
-            "three": () => console.log('three'),
-            "four":  () => console.log('four')
-          }   
-          annyang.addCommands(commands)
+          }      
 
         } else {
           that.session.current_card_done = true
@@ -333,7 +319,15 @@ class Flashcards {
           $('#vocab_flashcard .question').off('click')
           $('#vocab_flashcard .audio').off('click')
           // stop the progress bar ?
-          annyang.removeCommands()
+
+          // remove voice commands matching these words
+          // let commands = {} 
+          // $('.answer').each(function(index) { 
+          //   let short = $(this).text().split(' ').slice(0,0).join(' ').toLowerCase()
+          //   short = short.replace(/[~`!@#$%^&*(){}\[\];:"'<,.>?\/\\|_+=-]/g, '')
+          //   commands[short] = ()=>$(`.answer.a${index}`).trigger( "click" )
+          // }) 
+          // annyang.removeCommands(commands)  
         }
       }
 
@@ -364,6 +358,10 @@ class Flashcards {
         resolve(status)
       }
 
+      let addVoiceCommands = function(card) {
+
+      }
+
   
   
        
@@ -391,9 +389,9 @@ class Flashcards {
         let status = updateCardStatus(card, isCorrect)
         revealCardAnswers(answer, isCorrect) 
         // play appropriate sound then display next card after suitable delay
-        if (isCorrect) { 
-          that.sounds.snap.play(); 
-          setTimeout(()=> resolve_card(status), 400) 
+        if (isCorrect) {  
+          let sound = that.session.status[card.id].audioPreload[l2] 
+          that.playPreloadedSound(sound, 0, 500).then( () => resolve_card(status)) 
         } else {
           that.sounds.broken.play() 
           waitForCorrectCardClick(status)
@@ -406,7 +404,7 @@ class Flashcards {
         let playcount = 0
         let sound = that.session.status[card.id].audioPreload[l2] 
         let correctCardClicked = false
-        $('.answer.correct').click(() => { sound.stop(); correctCardClicked=true; resolve(status) })
+        $('.answer.correct').click(() => { sound.stop(); correctCardClicked=true; resolve_card(status) })
         function repeatSound() { 
           if (!correctCardClicked && that.session && playcount++ < MAX_REPLAY) that.playPreloadedSound(sound, 0, 2000).then(()=> repeatSound() ) 
         }  
@@ -464,9 +462,35 @@ class Flashcards {
         }
       } 
 
+      let initVoiceCommands = function() {
+        // let commands = {
+        //   "1":    () => $('.answer.a1').trigger({type:'click'}),
+        //   "2":    () => $('.answer.a2').trigger({type:'click'}),
+        //   "3":    () => $('.answer.a3').trigger({type:'click'}),
+        //   "4":    () => $('.answer.a4').trigger({type:'click'})
+        // }
+        // //let commands = {}
+        // // add voice commands matching these words
+        // console.log('Setting language to: '+ card.content.lang[l2])
+        // annyang.setLanguage(card.content.lang[l2]) 
+        // $('.answer').each(function(index) { 
+        //   let answer = $(this).text() 
+        //   let command = answer.toLowerCase().trim().replace(/[~`!@#$%^&*(){}\[\];:"'<,.>?\/\\|_+=-]/g, '')
+        //   commands[command] = ()=> {
+        //     console.log('Answering: ', answer)
+        //     selectAnswer(answer) 
+        //   }
+        // })  
+        // annyang.removeCommands()
+        // annyang.addCommands(commands)  
+      }
+
       // click and resize events for this card
       let setCardEvents = function (on=true) {
         if (on) {
+          // set up voice commands
+         // initVoiceCommands()
+
           var resizeCard = function(initial=false) {  
             window.fitText( document.querySelector(".flashcards .title"), 1.5 )
             if (['fa','ar'].indexOf(card.content.lang[l1])>=0) {
@@ -502,6 +526,9 @@ class Flashcards {
             })
             $(".audio, .question").addClass('clickable').click(() => that.playPreloadedSound(sound))
           }
+
+  
+
         } else { // remove events so buttons don't get accidentally clicked twice etc.
           that.session.current_card_done = true  // stop the progress bar  
           if (that.session.status[card.id].audioPreload[l1]) that.session.status[card.id].audioPreload[l1].stop() 
@@ -509,7 +536,7 @@ class Flashcards {
           $('#vocab_flashcard .audio img').off('click') 
           $('#vocab_flashcard').off('resize') 
           $('#vocab_flashcard .question').off('click')
-          $('#vocab_flashcard .audio').off('click')
+          $('#vocab_flashcard .audio').off('click')  
         }
       }
  
@@ -536,7 +563,14 @@ class Flashcards {
       }
 
       let resolve_card = function(status) {
-
+        // add voice commands matching these words
+        // annyang.setLanguage('en')
+        // let commands = {} 
+        // $('.answer').each(function(index) { 
+        //   let word = $(this).text().toLowerCase().trim().replace(/[~`!@#$%^&*(){}\[\];:"'<,.>?\/\\|_+=-]/g, '')
+        //   commands[word] = ()=> {}
+        // })  
+        // annyang.removeCommands(commands)  
         resolve(status)
       }
   
