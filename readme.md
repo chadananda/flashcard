@@ -6,6 +6,8 @@ Quick flashcard prototype to experiment with getting the flow right
 
   #### https://chadananda.github.io/flashcard/
 
+  <a href="https://chadananda.github.io/flashcard/"><img src="https://content.screencast.com/users/chadananda/folders/Jing/media/09a73b9b-5a8f-4601-80f2-0cdd7dd95a3a/00003023.png" alt="flashcard prototype" width="200px" style="float:right" align="right"></a>
+
 ### Summary
 
 The intention here is to support puggable types each with their own session rules but sharing a scheduling engine.
