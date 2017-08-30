@@ -1,3 +1,5 @@
+  <a href="https://chadananda.github.io/flashcard/"><img src="https://content.screencast.com/users/chadananda/folders/Jing/media/09a73b9b-5a8f-4601-80f2-0cdd7dd95a3a/00003023.png" alt="flashcard prototype" width="200px" style="float:right" align="right"></a>
+
 # Flashcard Prototype
 
 Quick flashcard prototype to experiment with getting the flow right
@@ -6,7 +8,7 @@ Quick flashcard prototype to experiment with getting the flow right
 
   #### https://chadananda.github.io/flashcard/
 
-  <a href="https://chadananda.github.io/flashcard/"><img src="https://content.screencast.com/users/chadananda/folders/Jing/media/09a73b9b-5a8f-4601-80f2-0cdd7dd95a3a/00003023.png" alt="flashcard prototype" width="200px" style="float:right" align="right"></a>
+
 
 ### Summary
 
