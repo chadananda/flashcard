@@ -282,7 +282,7 @@ class Flashcards {
         if (on) {
          var resizeCard = function(initial=false) {  
             window.fitText( document.querySelector(".flashcards .title"), 1.5 )
-            window.fitText( document.querySelector(".flashcards .description"), 1 )
+            window.fitText( document.querySelector(".flashcards .description"), 2)
             window.fitText( document.querySelector(".flashcards .question"), .85 )
             window.fitText( document.querySelectorAll(".flashcards .answer"), 1.5 )
             if (initial && !card.files.aud.length) moveProgressBar()
@@ -494,7 +494,7 @@ class Flashcards {
 
           var resizeCard = function(initial=false) {  
             window.fitText( document.querySelector(".flashcards .title"), 1.5 )
-            window.fitText( document.querySelector(".flashcards .description"), 1 )
+            window.fitText( document.querySelector(".flashcards .description"), 2 )
             if (['fa','ar'].indexOf(card.content.lang[l1])>=0) {
               window.fitText( document.querySelector(".flashcards .question"), .65 ) // ar
               window.fitText( document.querySelectorAll(".flashcards .answer"), 1 ) // en
