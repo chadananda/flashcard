@@ -1,0 +1,107 @@
+#flashcards {
+  display: inline-grid;   
+  grid-template-columns: 1fr 10fr 1fr;  
+  grid-template-rows:    2fr .5fr 6fr 1.5fr repeat(4, 5fr);
+  grid-template-areas: 
+      " audio       title       cancel   "
+      " description description description "
+      " question    question    question "
+      " timeout     timeout     timeout    "
+      " a1  a1  a1  "
+      " a2  a2  a2  "
+      " a3  a3  a3  "
+      " a4  a4  a4  "; 
+  }
+}  
+#card-audio           {grid-area: audio}  
+#card-title           {grid-area: title}
+#card-cancel          {grid-area: cancel}  
+#card-description     {grid-area: description}
+#card-question        {grid-area: question} 
+#card-timeout         {grid-area: timeout}
+.answer[data-num="1"] {grid-area: a1}
+.answer[data-num="2"] {grid-area: a2}
+.answer[data-num="3"] {grid-area: a3}
+.answer[data-num="4"] {grid-area: a4}
+
+
+/* play audio and cancel session buttons */
+.iconbtn {opacity: .55; width: 130%; cursor: pointer;}
+#card-audio img {margin-left:-35%;} 
+#card-cancel img {}
+#card-audio .material-icons, 
+#card-cancel .material-icons {font-size: calc(); color: #95a093;} 
+  /* #card-cancel.iconbtn .material-icons:hover,  #card-audio.iconbtn:hover .material-icons {color: green;} */
+/* card title */
+#card-title   {
+  text-align: center; padding-top: .1vw;
+  font-family: "Comic Sans MS", cursive, sans-serif; color: #687067;
+}     
+/* card exercise description */
+#card-description { margin: 0; 
+  font-family: "Arial Black", Gadget, sans-serif;
+  display:flex; align-items:center; justify-content:center;
+  font-size: .5em; color: silver; font-style: italic; font-weight: normal
+} 
+/* main question */
+#card-question {
+  margin-top: .25em; margin-bottom: .25em; 
+  font-family: "Arial Black", Gadget, sans-serif;
+  display:flex; align-items:center; justify-content:center;
+}  
+#card-question.clickable { cursor: pointer !important;}
+
+/* timeout bar */
+#card-timeout   {grid-area: timeout; 
+  position: relative; background: #89a085; overflow: hidden; height: .5vh; 
+  border-radius: .25rem; padding: 1px;
+} 
+#timeout-progress {
+  position: absolute; background: #f0f0f0; width: 100%; height: 100%; left: 0; top: 0;
+}
+
+
+
+
+@keyframes throb {
+  0%   {opacity: .1; right: -4vh;}
+  50%  {opacity: .1; right: 0;}
+  100% {opacity: .1; right: -4vh;}
+}
+.answer  {
+  padding: .5em; padding-left: 15%; margin-bottom: .5em; 
+  font-family: Arial, Helvetica, sans-serif; 
+  background-color: white; 
+  box-shadow: 1px 1px 5px 0px rgba(100,100,201, 0.23); border: .2vh solid #DDD; border-radius: .8vh;  
+  position:relative; display:flex; align-items:center; overflow:hidden;    
+} 
+.answer:before  { /* default flag display */ 
+  content: ""; position: absolute; display: block;  
+  height: 101%; top: 0; left: 0; width: 12%; z-index:1000;  
+  background-color: white; background-image: url(times.svg); 
+  background-repeat: no-repeat; background-size: 70%; background-position: 50%; 
+  border-top-left-radius: .3vh; border-bottom-left-radius: .3vh;  
+}
+.answer.correct { border-color:rgba(21, 104, 19, .25);}
+.answer.correct:before  { background-color: rgba(21, 104, 19, .75); background-image: url(check.svg); }
+.answer.wrongselection {border-color:rgba(198, 40, 37, .25);}
+.answer.wrongselection:before  {background-color: rgba(198, 40, 37, 1); }
+.answer.wrong { border-color:rgba(198, 40, 37, .25);}
+.answer.wrong:before  {background-color: rgba(198, 40, 37, .5); } 
+
+.answer.correct.correction span.correction_arrow:before {
+  display: block; position: absolute; top:50%; opacity:.2; width:5vh; height: 50%; content: '';  
+  background-image: url(ic_arrow_left.svg); 
+  background-repeat: no-repeat; background-size: 70%; background-position: 50%; 
+  animation: throb 2s ease-out 10 !important;
+}
+.answer.correct span.correction {
+  position: absolute; top:20%; right:0; z-index:100; opacity:.2; width:5vh;
+  animation: throb 2s ease-out 10 !important;
+  width: 50px; height: 50px; z-index: 100;
+  background-image: url("ic_arrow_left.svg");
+}
+.answer:after {
+  content: attr(data-num); color: #ddd;  
+  position: absolute; right:.5vh; top:.4vh; font-size: 1.5vh;   
+}

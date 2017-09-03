@@ -1,70 +1,50 @@
 <html>
-  <head>
-    <!-- THIS IS A VISUAL CONTAINER FOR PLAYING WITH FLASHCARDS  -->
-    <title>Flashcard Visualization</title> 
-    <!-- Resize Labels -->
-    <script src="../vendors/fittext.js"></script>
-    <!-- adjust speed of audio -->
-    <script src="../vendors/kali.min.js"></script>  
-    <!-- CSS for this Demo -->
-    <link rel="stylesheet" href="test.css">
-    <!-- Flashcard CSS -->
-    <link rel="stylesheet" href="../flashcard.css">
-    <script src="../flashcard.js"></script> 
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/howler/2.0.4/howler.min.js"></script>  
-    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-
-  <body id='flashcard_container'>   
-
-  </body>
-
-
-      <!-- <div id='vocab_flashcard' class="flashcards"> <img class='iphone' src="iPhone-6-wireframe.png" />
-      <div class='audio'><img src="ic_play_circle_filled_black_24px.svg"/></div>
-      <div class='title'> Flashcards (5/32 done) </div>
-      <div class='cancel'><img src="ic_cancel_black_24px.svg"/></div>
-      <div class='question'>Mammal</div>
-      <div class='timeout' id='timeout'>
-        <div id="timeout-progress" data-timeout-percent="25"></div>
-      </div>
-      <div class='answer answer1 wrongselection'>Small amphibious animal</div>     
-      <div class='answer answer2 wrong'>Model</div>  
-      <div class='answer answer3 correct'>Warm blooded animal which nurses young</div>  
-      <div class='answer answer4'>Subclass of the Austrian Turkey</div>  
-    </div> -->
-
-
+<head>
+  <!-- THIS IS A VISUAL CONTAINER FOR PLAYING WITH FLASHCARDS  -->
+  <title>Flashcard Visualization</title> 
+  <!-- Resize Labels -->
+  <script src="../vendors/fittext.js"></script>
+  <!-- adjust speed of audio -->
+  <script src="../vendors/kali.min.js"></script>  
+  <!-- CSS for this Demo -->
+  <link rel="stylesheet" href="../assets/test.css">
+  <!-- Flashcard CSS -->
+  <link rel="stylesheet" href="../assets/flashcard.css"> 
+  <script src="../flashcard.js"></script>  
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/howler/2.0.4/howler.min.js"></script>  
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>   -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
  
-<script>
- // document.addEventListener("DOMContentLoaded", function(event) {  
 
+<body id='flashcard_container'>
+  <div id='flashcards' class='vocab'><img class='iphone' src="../assets/iPhone-6-wireframe.png" /> 
+    <div id='card-audio' class='iconbtn'><img src="../assets/ic_play_circle_filled_black_24px.svg" /></div>
+    <div id='card-title'> Flashcards (5/32 done) </div>
+    <div id='card-cancel' class='iconbtn'><img src="../assets/ic_cancel_black_24px.svg"/></div>
+    <div id='card-description'>select the closest description</div>
+    <div id='card-question'>Mammal</div>
+    <div id='card-timeout'><div id="timeout-progress"></div></div> 
+    <div data-num='1' class='answer wrongselection'> Small amphibious animal </div>  
+    <div data-num='2' class='answer wrong'> Model </div>  
+    <div data-num='3' class='answer correct correction'> Warm blooded animal which nurses young 
+      <span class="correction_arrow"></span>  
+    </div>  
+    <div data-num='4' class='answer'> Subclass of the Austrian Turkey</div>  
+  </div> 
+</body>
+
+
+<script>
   $(document).ready(function() {
     // console.log ('loading cards')
-    let deck_store = './deck_store.json'
+    let deck_store = 'deck_store.json'
     $.getJSON(deck_store, function( cards_store ) {
       // console.log('loaded cards')
       let fc = new Flashcards(cards_store, 'flashcard_container')
       fc.startSession()
     })
-  })
-
-
- 
-
- // })
-
-  
-
-  // resize labels on resize event
-  // window.addEventListener('resize', moveProgressBar, true);
- 
-
-
+  }) 
 </script>
- 
-
-
 </html>

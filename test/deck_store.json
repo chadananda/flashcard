@@ -108,8 +108,7 @@
          "incorrect": [
            ["dog", "cat", "horse",  "monkey", "sheep", "lizard", "bird", "mosquitoe"],
            [ "كلب", "قط", "حصان",   "قرد",   "خروف",  "سحلية",  "طائر", "بعوض"]
-         ],
-         "audio": ["cards-audio/pig-en.mp3", "cards-audio/pig-ar.mp3"]
+         ] 
       },
       "files": {
         "aud": ["cards-audio/pig-en.mp3", "cards-audio/pig-ar.mp3"],

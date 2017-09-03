@@ -35,27 +35,6 @@
 // * can we create an external CouchDB based card storage? Deck Storage?
 // * can we create a web-based card-creation tool?
 
-
- 
-
-// Card {
-//   id=`${type}-${hash}`,
-//   type="vocab", 
-//   level=0, 
-//   next_session=173869, // scheduling  
-//   content: {  // content varies by type
-//     question, answers, audio: fileid, picture: fileid, files: [fileids]
-//   } 
-// }
-
-// session: 
-//   status[card_id] {completed, passed, history} 
-//   cards.hand: []
-//   cards.additional: []
-//   cards.completed: []
-//   current_card_done: bool 
-
- 
  
 
 class Flashcards {
@@ -233,12 +212,12 @@ class Flashcards {
       // show results of user selection
       let revealCardAnswers = function(answer, isCorrect) {
         let correct_answer = card.content.answer
-        $('#vocab_flashcard .answer').each(function() {
+        $('.answer').each(function() {
           if ($(this).text()===correct_answer) {
             $(this).addClass('correct')
             if (answer!=correct_answer) {
               $(this).addClass('correction')
-              $(this).append('<img src="ic_arrow_left.svg" class="correct_arrow" />')
+              $(this).append('<span class="correction_arrow"></span>')
             }
           }
           if (!isCorrect) {
@@ -261,17 +240,17 @@ class Flashcards {
       let moveProgressBar = function() { 
         // if (!that.session) console.error('that.session is null?: ', that)  else 
         if (!that.session || that.session.current_card_done) {
-          $('#vocab_flashcard .timeout').hide()
+          $('#card-timeout').hide()
         } else {
-          $('#vocab_flashcard .timeout').show()
+          $('#card-timeout').show()
           let elapsed = new Date().getTime() - START_TIME;
           if (elapsed<CARD_TIMEOUT) { 
-            let timeout = document.getElementById('timeout')
+            let timeout = document.getElementById('card-timeout')
             let progressbar = document.getElementById('timeout-progress') 
             progressbar.style.left = Math.round((elapsed / CARD_TIMEOUT) * timeout.offsetWidth) + 'px'
             setTimeout(moveProgressBar, 100) // call back in 100ms
           } else {
-            $('#vocab_flashcard .timeout').hide()
+            $('#card-timeout').hide()
             selectAnswer('skip_card') // skip card if timeoutelse selectAnswer('') // force wrong answer 
           }
         }
@@ -281,20 +260,20 @@ class Flashcards {
       let setCardEvents = function (on=true) {
         if (on) {
          var resizeCard = function(initial=false) {  
-            window.fitText( document.querySelector(".flashcards .title"), 1.5 )
-            window.fitText( document.querySelector(".flashcards .description"), 2)
-            window.fitText( document.querySelector(".flashcards .question"), .85 )
-            window.fitText( document.querySelectorAll(".flashcards .answer"), 1.5 )
+            window.fitText( document.querySelector("#card-title"), 1.5 )
+            window.fitText( document.querySelector("#card-description"), 2)
+            window.fitText( document.querySelector("#card-question"), .85 )
+            window.fitText( document.querySelectorAll(".answer"), 1.5 )
             if (initial && !card.files.aud.length) moveProgressBar()
           }          
           resizeCard(true)  
 
-          $('#vocab_flashcard .answer').click(function() {  selectAnswer( $(this).text() ) })
-          $('#vocab_flashcard .cancel').click(function() { 
+          $('.answer').click(function() {  selectAnswer( $(this).text() ) })
+          $('#card-cancel').click(function() { 
             that.session.current_card_done = true
             selectAnswer('cancel_session')
           })    
-          $('#vocab_flashcard').resize(resizeCard) 
+          $('#flashcards').resize(resizeCard) 
 
           // keypress events
           $('html').keypress((e) => { if (['1','2','3','4'].indexOf(e.key)>=0) $(`.answer.a${e.key}`).trigger( "click" ) })
@@ -308,17 +287,17 @@ class Flashcards {
               moveProgressBar()  
               if (!that.session.current_card_done) that.playPreloadedSound(sound) 
             })
-            $(".audio, .question").addClass('clickable').click(() => that.playPreloadedSound(sound))
+            $("#card-audio, #card-question").addClass('clickable').click(() => that.playPreloadedSound(sound))
           }      
 
         } else {
           that.session.current_card_done = true
           if (that.session.status[card.id].audioPreload) that.session.status[card.id].audioPreload[0].stop() 
-          $('#vocab_flashcard .answer').off('click')
-          $('#vocab_flashcard .audio img').off('click') 
-          $('#vocab_flashcard').off('resize') 
-          $('#vocab_flashcard .question').off('click')
-          $('#vocab_flashcard .audio').off('click')
+          $('.answer').off('click')
+          $('#card-audio img').off('click') 
+          $('#flashcards').off('resize') 
+          $('#card-question').off('click')
+          $('#card-audio').off('click')
           // stop the progress bar ?
 
           // remove voice commands matching these words
@@ -339,15 +318,15 @@ class Flashcards {
         let main_sound = that.session.status[card.id].audioPreload[0]
         // select three random incorrect answers and shuffle with correct answer
         let answers = _shuffleArray(_shuffleArray(card.content.incorrect).slice(0, 3).concat([card.content.answer]))  
-          .map((answer, index) => `<div class='answer a${index+1}'>${answer}<span data-num='${index+1}'></span></div>`).join('\n')  
+          .map((answer, index) => `<div data-num='${index+1}' class='answer'>${answer}</div>`).join('\n')  
         // vocab_flashcard style 
-        let cardHTML = `<div id='vocab_flashcard' class="flashcards"> <img class='iphone' src="iPhone-6-wireframe.png" />
-            <div class='audio' style='${main_sound? '': 'display:none'}'><img src="ic_play_circle_filled_black_24px.svg" /></div>
-            <div class='title'> Flashcards (${total_cards_completed}/${total_cards} done) </div>
-            <div class='cancel'><img src="ic_cancel_black_24px.svg"/></div>
-            <div class='question'>${card.content.question}</div>
-            <div class='description'>${card.content.description}</div>
-            <div class='timeout' id='timeout'><div id="timeout-progress"></div></div>
+        let cardHTML = `<div id='flashcards' class="vocab"> <img class='iphone' src="../assets/iPhone-6-wireframe.png" />
+            <div id='card-audio' style='${main_sound? '': 'display:none'}'><img src="../assets/ic_play_circle_filled_black_24px.svg" /></div>
+            <div id='card-title'> Flashcards (${total_cards_completed}/${total_cards} done) </div>
+            <div id='card-cancel'><img src="../assets/ic_cancel_black_24px.svg"/></div>
+            <div id='card-question'>${card.content.question}</div>
+            <div id='card-description'>${card.content.description}</div>
+            <div id='card-timeout' id='timeout'><div id="timeout-progress"></div></div>
             ${answers}  
           </div> ` 
         $(that.el).html(cardHTML)  
@@ -391,8 +370,9 @@ class Flashcards {
         revealCardAnswers(answer, isCorrect) 
         // play appropriate sound then display next card after suitable delay
         if (isCorrect) {  
+          that.sounds.snap.play() 
           let sound = that.session.status[card.id].audioPreload[l2] 
-          that.playPreloadedSound(sound, 0, 500).then( () => resolve_card(status)) 
+          that.playPreloadedSound(sound, 500, 500).then( () => resolve_card(status)) 
         } else {
           that.sounds.broken.play() 
           waitForCorrectCardClick(status)
@@ -415,12 +395,12 @@ class Flashcards {
       // show results of user selection
       let revealCardAnswers = function(answer, isCorrect) {
         let correct_answer = card.content.words[l2]
-        $('#vocab_flashcard .answer').each(function() {
+        $('#flashcards .answer').each(function() {
           if ($(this).text()===correct_answer) {
             $(this).addClass('correct')
             if (answer!=correct_answer) {
               $(this).addClass('correction')
-              $(this).append('<img src="ic_arrow_left.svg" class="correct_arrow" />')
+              $(this).append('<span class="correction_arrow"></span>')
             }
           }
           if (!isCorrect) {
@@ -447,17 +427,17 @@ class Flashcards {
       let moveProgressBar = function() { 
         // if (!that.session) console.error('that.session is null?: ', that)  else 
         if (!that.session || that.session.current_card_done) {
-          $('#vocab_flashcard .timeout').hide()
+          $('#card-timeout').hide()
         } else {
-          $('#vocab_flashcard .timeout').show()
+          $('#card-timeout').show()
           let elapsed = new Date().getTime() - START_TIME;
           if (elapsed<CARD_TIMEOUT) { 
-            let timeout = document.getElementById('timeout')
+            let timeout = document.getElementById('card-timeout')
             let progressbar = document.getElementById('timeout-progress') 
             progressbar.style.left = Math.round((elapsed / CARD_TIMEOUT) * timeout.offsetWidth) + 'px'
             setTimeout(moveProgressBar, 100) // call back in 100ms
           } else {
-            $('#vocab_flashcard .timeout').hide()
+            $('#card-timeout').hide()
             selectAnswer('skip_card') // skip card if timeoutelse selectAnswer('') // force wrong answer 
           }
         }
@@ -493,29 +473,29 @@ class Flashcards {
          // initVoiceCommands()
 
           var resizeCard = function(initial=false) {  
-            window.fitText( document.querySelector(".flashcards .title"), 1.5 )
-            window.fitText( document.querySelector(".flashcards .description"), 2 )
+            window.fitText( document.querySelector("#card-title"), 1.5 )
+            window.fitText( document.querySelector("#card-description"), 2 )
             if (['fa','ar'].indexOf(card.content.lang[l1])>=0) {
-              window.fitText( document.querySelector(".flashcards .question"), .65 ) // ar
-              window.fitText( document.querySelectorAll(".flashcards .answer"), 1 ) // en
+              window.fitText( document.querySelector("#card-question"), .65 ) // ar
+              window.fitText( document.querySelectorAll(".answer"), 1 ) // en
             } else {
-              window.fitText( document.querySelector(".flashcards .question"), .85 ) // en
-              window.fitText( document.querySelectorAll(".flashcards .answer"), .85 ) // ar
+              window.fitText( document.querySelector("#card-question"), .85 ) // en
+              window.fitText( document.querySelectorAll(".answer"), .85 ) // ar
             } 
             if (initial && !card.files.aud[l1]) moveProgressBar()
           }          
           resizeCard(true)  
 
-          $('#vocab_flashcard .answer').click(function() {  selectAnswer( $(this).text() ) })
-          $('#vocab_flashcard .cancel').click(function() { 
+          $('.answer').click(function() {  selectAnswer( $(this).text() ) })
+          that.session.current_card_done = false
+          $('#card-cancel').click(function() { 
             that.session.current_card_done = true
             selectAnswer('cancel_session')
           })    
-          $('#vocab_flashcard').resize(resizeCard) 
+          $('#flashcards').resize(resizeCard) 
 
           // keypress events
           $('html').keypress((e) => { if (['1','2','3','4'].indexOf(e.key)>=0) $(`.answer.a${e.key}`).trigger( "click" ) })
-          
           
           // set up audio play
           if (card.files.aud[l1]) { 
@@ -528,17 +508,15 @@ class Flashcards {
             })
             $(".audio, .question").addClass('clickable').click(() => that.playPreloadedSound(sound))
           }
-
-  
-
+ 
         } else { // remove events so buttons don't get accidentally clicked twice etc.
           that.session.current_card_done = true  // stop the progress bar  
           if (that.session.status[card.id].audioPreload[l1]) that.session.status[card.id].audioPreload[l1].stop() 
-          $('#vocab_flashcard .answer').off('click')
-          $('#vocab_flashcard .audio img').off('click') 
-          $('#vocab_flashcard').off('resize') 
-          $('#vocab_flashcard .question').off('click')
-          $('#vocab_flashcard .audio').off('click')  
+          $('.answer').off('click')
+          $('#card-audio img').off('click') 
+          $('#flashcards').off('resize') 
+          $('#card-question').off('click')
+          $('#card-audio').off('click')  
         }
       }
  
@@ -549,15 +527,15 @@ class Flashcards {
         let total_cards_completed = that.session.completed.length  
         let main_sound = that.session.status[card.id].audioPreload[l1]
         let answers = _shuffleArray(_shuffleArray(card.content.incorrect[l2]).slice(0, 3).concat([card.content.words[l2]]))  
-          .map((answer, index) => `<div class='answer a${index+1}'><span class='text'>${answer}</span><span data-num='${index+1}'></span></div>`).join('\n') 
+          .map((answer, i) => `<div data-num='${i+1}' class='answer'><span class='text'>${answer}</span></div>`).join('\n') 
         // vocab_flashcard style 
-        let cardHTML = `<div id='vocab_flashcard' class="flashcards"> <img class='iphone' src="iPhone-6-wireframe.png" />
-            <div class='audio' style='${main_sound ? '' : 'display:none'}'><img src="ic_play_circle_filled_black_24px.svg" /></div>
-            <div class='title'> Flashcards (${total_cards_completed}/${total_cards} done) </div>
-            <div class='cancel'><img src="ic_cancel_black_24px.svg"/></div>
-            <div class='question'>${card.content.words[l1]}</div>
-            <div class='description'>${card.content.description}</div>
-            <div class='timeout' id='timeout'><div id="timeout-progress"></div></div>
+        let cardHTML = `<div id='flashcards' class="vocab"> <img class='iphone' src="../assets/iPhone-6-wireframe.png" />
+            <div id='card-audio' style='${main_sound ? '' : 'display:none'}'><img src="../assets/ic_play_circle_filled_black_24px.svg" /></div>
+            <div id='card-title'> Flashcards (${total_cards_completed}/${total_cards} done) </div>
+            <div id='card-cancel'><img src="../assets/ic_cancel_black_24px.svg"/></div>
+            <div id='card-description'>${card.content.description}</div>
+            <div id='card-question'>${card.content.words[l1]}</div>
+            <div id='card-timeout' id='timeout'><div id="timeout-progress"></div></div>
             ${answers}  
           </div> ` 
         $(that.el).html(cardHTML)  
@@ -584,13 +562,13 @@ class Flashcards {
 
   displayCard_done(that) {
     let html = `
-      <div id='vocab_flashcard' class="flashcards"> <img class='iphone' src="iPhone-6-wireframe.png" />
+      <div id='flashcards' class="done"> <img class='iphone' src="../assets/iPhone-6-wireframe.png" />
         <div class='audio'></div>
         <div class='title'></div>
         <div class='cancel'></div>
         <div class='question'>
           Flashcard Session Complete <br> 
-          <img src="ic_cancel_black_24px.svg" class="buttonsize"/>
+          <img src="../assets/ic_cancel_black_24px.svg" class="buttonsize"/>
         </div>
         <div class='timeout' id='timeout'></div> 
       </div> `

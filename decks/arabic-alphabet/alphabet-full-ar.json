@@ -1,0 +1,618 @@
+[
+   {"id":"lang_vocab-d84kd9ckdk", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["‘alif, <b>á</b> as in f<b>a</b>ther",  "ا ـا"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/alif-en.mp3", "audio/alif-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdl", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["bá’, <b>b</b> as in <b>b</b>ed",  "ب بـ ـبـ ـب"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/baa-en.mp3", "audio/baa-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdm", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["tá’, <b>t</b> as in <b>t</b>ree",  "ت تـ ـتـ ـت"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/taa-en.mp3", "audio/taa-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdn", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",  "ث ثـ ـثـ ـث"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", 
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/thaa-en.mp3", "audio/thaa-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdo", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["jím, <b>j</b> as in <b>j</b>ump",  "ج جـ ـجـ ـج"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/jiim-en.mp3", "audio/jiim-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdp", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",  "ح حـ ـحـ ـح"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree",  
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/haa-en.mp3", "audio/haa-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdq", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["<u>kh</u>á’, <b><u>kh</u></b> like lo<b>ch</b>",  "خ خـ ـخـ ـخ"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/khaa-en.mp3", "audio/khaa-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdr", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["dál, <b>d</b> as in <b>d</b>esk",  "د ـد"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed",  "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)",        "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap",  "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/daal-en.mp3", "audio/daal-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckds", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["<u>dh</u>ál, <b><u>dh</u></b> as in <b>th</b>at",  "ذ ـذ"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/dhaal-en.mp3", "audio/dhaal-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdt", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["rá’, <b>r</b> (rolled r)",  "ر ـر"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/raa-en.mp3", "audio/raa-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdju", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["záy, <b>z</b> as in <b>z</b>oo",  "ز ـز"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)",  
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/zaay-en.mp3", "audio/zaay-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdv", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["sín, <b>s</b> as in <b>s</b>it",  "س سـ ـسـ ـس"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ", "ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/siin-en.mp3", "audio/siin-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdw", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["<u>sh</u>ín, <b><u>sh</u></b> as in <b>sh</b>ine",  "ش شـ ـشـ ـش"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس", "ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/shiin-en.mp3", "audio/shiin-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdx", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["ṣád, <b>ṣ</b> as in <b>s</b>oul (hard s)",  "ص صـ ـصـ ـص"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+             "ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/saad-en.mp3", "audio/saad-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdy", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["ḍád, <b>ḍ</b> as in <b>d</b>aunting (hard d)",  "ض ضـ ـضـ ـض"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص", "ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/daad-en.mp3", "audio/daad-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdz", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["ṭá’, <b>ṭ</b> as in <b>t</b>aught (hard t)",  "ط طـ ـطـ ـط"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض", "ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/taa-en.mp3", "audio/taa-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdja", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["ẓá’, <b>ẓ</b> as in Au <b>J</b>us (french dh)",  "ظ ظـ ـظـ ـظ"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط", "ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/zaa-en.mp3", "audio/zaa-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdjb", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["‘ayn, <b>‘a</b> as in <b>a</b>ngry (consonant)",  "ع عـ ـعـ ـع"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ", "م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/ayn-en.mp3", "audio/ayn-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdjd", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["<u>gh</u>ayn, <b><u>gh</u></b> like <b>g</b>oy",  "غ غـ ـغـ ـغ"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/ghayn-en.mp3", "audio/ghayn-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdje", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["fá’, <b>f</b> as in <b>f</b>ast",  "ف فـ ـفـ ـف"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+             "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش", 
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/faa-en.mp3", "audio/faa-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdjf", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["qáf, <b>q</b> like <b>g</b>one (but deeper)",  "ق قـ ـقـ ـق"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/qaaf-en.mp3", "audio/qaaf-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdjg", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["káf, <b>k</b> as in <b>k</b>ite",  "ك كـ ـكـ ـك"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", 
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/kaaf-en.mp3", "audio/kaaf-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdjh", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["lám, <b>l</b> as in <b>l</b>imb",  "ل لـ ـلـ ـل"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/laam-en.mp3", "audio/laam-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdji", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["mím, <b>m</b> as in <b>m</b>ap",  "م مـ ـمـ ـم"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+             "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع" ]
+         ]
+      },
+      "files": {
+        "aud": ["audio/miim-en.mp3", "audio/miim-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdjj", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["nún, <b>n</b> as in <b>n</b>ight",  "ن نـ ـنـ ـن"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/nuun-en.mp3", "audio/nuun-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdjk", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["há’, <b>h</b> as in <b>h</b>ouse",  "ه هـ ـهـ ـه"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap",  
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/haa-en.mp3", "audio/haa-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdjl", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["wáw, <b>w</b> as in <b>w</b>atch",  "و ـو"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer",
+            "yá’, <b>y</b> as in <b>y</b>ellow"],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/waaw-en.mp3", "audio/waaw-ar.mp3"] 
+      }
+    },
+
+
+   {"id":"lang_vocab-d84kd9ckdjm", "type":"lang_vocab",
+      "content": {
+         "lang":  ["en", "ar"],
+         "words": ["yá’, <b>y</b> as in <b>y</b>ellow",  "ي يـ ـيـ ـي"],
+         "description": "select the correct letter",
+         "incorrect": [
+           ["tá’, <b>t</b> as in <b>t</b>ree", "ḥá’,  <b>ḥ</b> as in <b>h</b>ot (hard h)",
+            "bá’, <b>b</b> as in <b>b</b>ed", "<u>th</u>á’, <b><u>th</u></b> as in <b>th</b>ing",
+            "rá’, <b>r</b> (rolled r)", "záy, <b>z</b> as in <b>z</b>oo",
+            "fá’, <b>f</b> as in <b>f</b>ast", "káf, <b>k</b> as in <b>k</b>ite",
+            "mím, <b>m</b> as in <b>m</b>ap", "há’, <b>h</b> as in <b>h</b>ammer" ],
+           ["ب بـ ـبـ ـب","ج جـ ـجـ ـج","خ خـ ـخـ ـخ","س سـ ـسـ ـس","ش شـ ـشـ ـش","ف فـ ـفـ ـف",
+            "ص صـ ـصـ ـص","ض ضـ ـضـ ـض","ط طـ ـطـ ـط","ظ ظـ ـظـ ـظ","ع عـ ـعـ ـع","م مـ ـمـ ـم"]
+         ]
+      },
+      "files": {
+        "aud": ["audio/yaa-en.mp3", "audio/yaa-ar.mp3"] 
+      }
+    }
+    
+]
+
+

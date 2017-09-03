@@ -7,14 +7,13 @@
     "....... cards    ....... "
     "....... ....... ....... ";
 }
-.flashcards {position: relative; grid-area: cards; }  
+#flashcards {position: relative; grid-area: cards; }  
 img.iphone {position: absolute; z-index:-100; width: 45vh; left: -5.5vh; top:-13.5vh; opacity: 0.5; } 
 
-/* very narrow */ 
 @media ( max-width: 5in ){ 
   img.iphone {display: none;}
   #flashcard_container {  
     grid-template-rows:    1em 132vw auto;
     grid-template-columns: 1em auto 1em; 
   } 
-}
+} 
