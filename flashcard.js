@@ -276,7 +276,7 @@ class Flashcards {
           $('#flashcards').resize(resizeCard) 
 
           // keypress events
-          $('html').keypress((e) => { if (['1','2','3','4'].indexOf(e.key)>=0) $(`.answer.a${e.key}`).trigger( "click" ) })
+          $('html').keypress((e) => { if (['1','2','3','4'].indexOf(e.key)>=0) $(`.answer[data-num='${e.key}']`).trigger( "click" ) })
           
           // set up audio play
           if (card.files.aud) { 
@@ -495,7 +495,7 @@ class Flashcards {
           $('#flashcards').resize(resizeCard) 
 
           // keypress events
-          $('html').keypress((e) => { if (['1','2','3','4'].indexOf(e.key)>=0) $(`.answer.a${e.key}`).trigger( "click" ) })
+          $('html').keypress((e) => { if (['1','2','3','4'].indexOf(e.key)>=0) $(`.answer[data-num='${e.key}']`).trigger( "click" ) })
           
           // set up audio play
           if (card.files.aud[l1]) { 
